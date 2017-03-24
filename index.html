@@ -81,8 +81,17 @@
 <script src="https://code.jquery.com/jquery.js"></script>
 
 <script>
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCYbdBB4xHzkue_zOx2q5bKiX6LSJhbekk",
+    authDomain: "train-c1e53.firebaseapp.com",
+    databaseURL: "https://train-c1e53.firebaseio.com",
+    storageBucket: "train-c1e53.appspot.com",
+    messagingSenderId: "628391318962"
+  };
+  firebase.initializeApp(config);
+  
 var dataRef = new Firebase("https://am-traintimes.firebaseio.com/");
-
 var trainName = "";
 var destination = "";
 var firstTrain = "";
